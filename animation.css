@@ -1,0 +1,94 @@
+.card{
+    height: 10rem;
+    width: 10rem;
+    background-color: blueviolet;
+    
+    transition: transform 5s,heigth 5s , width 5s;
+    margin-bottom: 1rem;
+
+
+}
+.card:hover{
+    transform: rotate(300deg);
+    height: 12rem;
+    width: 12rem;
+}
+.card1{
+    height: 10rem;
+    width: 10rem;
+    /* background-color: brown; */
+     margin-top: 20px;
+     margin-bottom: 20px;
+     transition: background-color 0.5s;
+     animation-name: changecolor;
+     position: relative;
+}
+@keyframes changecolor{
+    from{
+        background-color: brown;
+    }
+    to{
+        background-color: purple;
+    }
+}
+.card2{
+     margin-top: 10px; 
+    height: 10rem;
+    width: 10rem;
+    animation-name: cardTest;
+    background-color: lightsalmon;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    margin-bottom: 1px;
+    position: relative;
+
+}
+@keyframes cardTest{
+    from{
+         margin-top: 50px;
+          background-color: aqua;  
+        }
+    to{   
+        margin-left: 50px;
+        background-color: red;
+    }
+}
+.card3{
+    
+        height: 7rem;
+        width:7rem;
+        animation-name:boxAnimation ;
+        animation-duration: 10s;
+        animation-iteration-count: infinte;
+    }
+    
+    @keyframes boxAnimation{
+        0%{margin-left:0rem ;background-color:black ;}
+        25%{ margin-left:0rem;background-color: chartreuse;}
+        50%{margin-top:0rem; margin-left: 0rem;background-color: brown;}
+        75%{margin-top:0rem; margin-left: 0rem; background-color: blueviolet;}
+        100%{ margin-top:0rem; margin-left:0rem;background-color: aqua;}
+    }
+.card4{
+   height: 10rem;
+   width: 10rem;
+   background-color: greenyellow;
+   position: absolute;
+   animation-name: changeposition;
+   animation-duration: 5s;
+   margin-top: 10px;
+   margin-bottom: 10px;
+}
+ @keyframes changeposition{
+        from {
+            margin-bottom: 10px;
+            background-color: deeppink;
+        }
+        to {
+           
+        margin-left: 20px;
+        background-color: black;
+        }
+    }
+
+
